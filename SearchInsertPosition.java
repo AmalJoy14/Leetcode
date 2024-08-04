@@ -1,9 +1,24 @@
 class Solution {
     public int searchInsert(int[] nums, int target) {
-        int result = Arrays.binarySearch(nums , target);
-        if (result < 0){
-            result = Math.abs(result) - 1;
+
+        //Binary Search Algorithm
+        int left = 0, right = nums.length -1;
+        int mid = 0;
+
+        while (left <= right){
+            mid =(left + right)/2;
+            if (nums[mid] == target){
+                return mid;
+            }
+            else if(target > nums[mid]){
+                left = mid + 1;
+            }
+            else{
+                right = mid - 1;
+            }
         }
-        return result;
+        //////////////////////////////////////////
+        if (nums[0] > target) return 0;
+        return (left + right)/2 + 1;
     }
 }
