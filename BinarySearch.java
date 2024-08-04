@@ -2,6 +2,7 @@ class Solution {
     public int search(int[] nums, int target) {
         
         //Binary Search Algorithm
+        
         int left = 0, right = nums.length - 1;
 
         while(left <= right){
@@ -17,6 +18,7 @@ class Solution {
             }
         }
         return -1;
+        
         ////////////////////////////////////////////
     }
 }
