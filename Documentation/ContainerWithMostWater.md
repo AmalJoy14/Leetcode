@@ -10,4 +10,5 @@
 #### (note that the second term (b - a) is ensured to be as max as it can as we start the pointers at the edges, and move inward (thereby decreasing the term) to check for potential maximums, while keeping a max variable).
 
 
+
 ![ContainerWithMostWater](../Images/ContainerWithMostWater.png)
