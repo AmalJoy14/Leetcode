@@ -14,24 +14,20 @@
  * }
  */
 class Solution {
-    List<Integer> list= new ArrayList<>(); 
+    long prev ,curr = Long.MIN_VALUE;
     public boolean isValidBST(TreeNode root) {
-        //Inorder Traversal results in sorted values.
-        inorder(root);
-        for (int i = 1 ; i < list.size() ; i++){
-            if (list.get(i) <= list.get(i - 1)){
-                return false;
-            }
-        }
-        return true;
-    }
 
-    public void inorder(TreeNode root){
+        //Inorder Traversal results in sorted values in BST.
         if (root == null){
-            return;
+            return true;
         }
-        inorder(root.left);
-        list.add(root.val);
-        inorder(root.right);
+        boolean left = isValidBST(root.left);
+        prev = curr;
+        curr = root.val;
+        if (prev >= curr){
+            return false;
+        }
+        boolean right = isValidBST(root.right);
+        return left && right;
     }
 }
