@@ -7,21 +7,21 @@ Euclid's Algorithm is used to find the **Greatest Common Divisor (GCD)** of two 
 
 ## Brute Force Approach
 
-![EuclidsAlgorithm](./Images/EuclidsAlgo/EuclidsAlgo1.jpg)
+![EuclidsAlgorithm](../Images/EuclidsAlgo/EuclidsAlgo1.jpg)
 
 ---
 
 ## Euclid's Algorithm
 
-![EuclidsAlgorithm](./Images/EuclidsAlgo/EuclidsAlgo2.jpg)
+![EuclidsAlgorithm](../Images/EuclidsAlgo/EuclidsAlgo2.jpg)
 
 ---
 
 ## Optimized Euclid's Algorithm
 
-![EuclidsAlgorithm](./Images/EuclidsAlgo/EuclidsAlgo3.jpg)
+![EuclidsAlgorithm](../Images/EuclidsAlgo/EuclidsAlgo3.jpg)
 
-![EuclidsAlgorithm](./Images/EuclidsAlgo/EuclidsAlgo4.jpg)
+![EuclidsAlgorithm](../Images/EuclidsAlgo/EuclidsAlgo4.jpg)
 
 ----
 
